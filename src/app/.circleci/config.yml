@@ -1,9 +1,12 @@
 version: 2
 jobs:
-   build:
-     docker:
-       - image: circleci/node:4-browsers
-     steps:
-       - checkout
-       - run: echo "hello world"
-       - run: yarn run eslint .
+  build:
+    docker:
+      - image: circleci/node:4-browsers
+    steps:
+      - checkout
+      - run: echo "hello world"
+  test:
+    steps:
+      - checkout
+      - run: yarn run eslint .
