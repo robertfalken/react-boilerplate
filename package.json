@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack-dev-server --hot"
+    "serve": "webpack-dev-server --hot",
+    "pretest": "yarn run eslint ."
   },
   "dependencies": {
     "babel-core": "^6.26.0",
