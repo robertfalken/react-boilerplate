@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import dummyDomain from 'demoDomain/index'
+import Title from './Title'
 
 function DemoDomain({ title, handleAsync }) {
   return (
     <div>
-      <h1>{title}</h1>
+      <Title>{title}</Title>
       <p>
         <Link to="more">More</Link>
         <button onClick={handleAsync}>Async!</button>

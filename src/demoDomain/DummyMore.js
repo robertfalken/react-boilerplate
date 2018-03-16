@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Title from './Title'
 
 function DummyMore() {
   return (
     <div>
-      <h1>
+      <Title>
         Another route
-      </h1>
+      </Title>
       <p>
         <Link to="/">
           Back
