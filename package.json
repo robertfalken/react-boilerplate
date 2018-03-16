@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "webpack-dev-server --hot",
-    "lint": "eslint ."
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
     "babel-core": "^6.26.0",
