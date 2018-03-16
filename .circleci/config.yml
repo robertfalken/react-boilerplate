@@ -11,7 +11,7 @@ jobs:
       - image: circleci/node:4-browsers
     steps:
       - checkout
-      - run: yarn run eslint .
+      - run: npm run eslint .
 workflows:
   version: 2
   build_and_test:
