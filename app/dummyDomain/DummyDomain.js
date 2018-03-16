@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { Route, Link } from 'react-router-dom'
 import { ConnectedRouter } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory'
+import dummyDomain from 'dummyDomain/index'
 
 const history = createHistory()
 
@@ -23,7 +24,7 @@ function DummyDomain({ title }) {
 
 function mapStateToProps(state) {
   return {
-    title: state.dummyDomain.base.title,
+    title: dummyDomain.selectors.getTitle(state),
   }
 }
 
