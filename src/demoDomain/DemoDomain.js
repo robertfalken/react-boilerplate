@@ -10,7 +10,9 @@ function DemoDomain({ title, handleAsync }) {
     <div>
       <Title>{title}</Title>
       <p>
-        <Link to="more">More</Link>
+        <Link to="more">Test the router</Link>
+      </p>
+      <p>
         <button onClick={handleAsync}>Async!</button>
       </p>
     </div>
