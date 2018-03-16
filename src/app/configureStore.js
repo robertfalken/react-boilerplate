@@ -4,8 +4,8 @@ import {
   createStore,
 } from 'redux'
 import createSagaMiddleware from 'redux-saga'
-import reducers from './reducers'
 import sagas from 'app/sagas'
+import reducers from './reducers'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose // eslint-disable-line no-underscore-dangle, max-len
 const sagaMiddleWare = createSagaMiddleware()
