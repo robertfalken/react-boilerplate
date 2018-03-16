@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import dummyDomain from 'dummyDomain/reducers'
+import demoDomain from 'demoDomain/reducers'
 
 export default combineReducers({
-  dummyDomain,
+  demoDomain,
 })

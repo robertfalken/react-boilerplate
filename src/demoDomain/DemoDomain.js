@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import dummyDomain from 'dummyDomain/index'
+import dummyDomain from 'demoDomain/index'
 
-function DummyDomain({ title, handleAsync }) {
+function DemoDomain({ title, handleAsync }) {
   return (
     <div>
       <h1>{title}</h1>
@@ -16,7 +16,7 @@ function DummyDomain({ title, handleAsync }) {
   )
 }
 
-DummyDomain.propTypes = {
+DemoDomain.propTypes = {
   handleAsync: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
 }
@@ -34,4 +34,4 @@ function mapDispatchToProps(dispatch) {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(DummyDomain)
+export default connect(mapStateToProps, mapDispatchToProps)(DemoDomain)

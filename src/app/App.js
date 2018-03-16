@@ -2,14 +2,14 @@ import React from 'react'
 import { hot } from 'react-hot-loader'
 import { BrowserRouter, Route } from 'react-router-dom'
 import './style.sass'
-import DummyDomain from '../dummyDomain/DummyDomain'
-import DummyMore from '../dummyDomain/DummyMore'
+import DemoDomain from '../demoDomain/DemoDomain'
+import DummyMore from '../demoDomain/DummyMore'
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <Route exact path="/" component={DummyDomain} />
+        <Route exact path="/" component={DemoDomain} />
         <Route path="/more" component={DummyMore} />
       </div>
     </BrowserRouter>
