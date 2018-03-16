@@ -22,6 +22,19 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      {
+        test: /\.sass$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader',
+          }, {
+            loader: 'css-loader',
+          }, {
+            loader: 'sass-loader',
+          },
+        ],
+      },
     ],
   },
   mode: 'development',
