@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:4-browsers
     steps:
       - checkout
+      - run: npm install
       - run: echo "hello world"
   test:
     docker:
