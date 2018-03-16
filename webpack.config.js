@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: './app/index',
+  entry: './src/index',
   devServer: {
     historyApiFallback: {
       index: 'index.html',
@@ -15,7 +15,7 @@ module.exports = {
   resolve: {
     modules: [
       'node_modules',
-      path.resolve(__dirname, 'app'),
+      path.resolve(__dirname, 'src'),
     ],
     extensions: ['.js'],
   },
