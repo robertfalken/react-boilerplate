@@ -7,6 +7,8 @@ jobs:
       - checkout
       - run: echo "hello world"
   test:
+    docker:
+      - image: circleci/node:4-browsers
     steps:
       - checkout
       - run: yarn run eslint .
