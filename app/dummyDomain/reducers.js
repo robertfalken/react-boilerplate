@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
 function base(state = { title: 'Hello world!' }, { type, payload }) {
-  switch(type) {
+  switch (type) {
     default: return state
   }
 }
