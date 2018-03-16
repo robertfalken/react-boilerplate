@@ -1,8 +1,10 @@
-import { all } from 'redux-saga/effects'
+import { fork } from 'redux-saga/effects'
 import dummySagas from 'dummyDomain/sagas'
 
-export default function* rootSaga() {
-  yield all([
-    ...dummySagas,
-  ])
+function* rootSaga() {
+  yield [
+    fork(...dummySagas),
+  ]
 }
+
+export default rootSaga

@@ -13,6 +13,4 @@ function* saga() {
   yield takeLatest('ASYNC_REQUEST', doAsync)
 }
 
-export default [
-  saga,
-]
+export default [saga]
