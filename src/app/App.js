@@ -3,14 +3,14 @@ import { hot } from 'react-hot-loader'
 import { BrowserRouter, Route } from 'react-router-dom'
 import './style.sass'
 import DemoDomain from '../demoDomain/DemoDomain'
-import DummyMore from '../demoDomain/DummyMore'
+import ReduxTest from '../demoDomain/ReduxTest'
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Route exact path="/" component={DemoDomain} />
-        <Route path="/more" component={DummyMore} />
+        <Route path="/redux" component={ReduxTest} />
       </div>
     </BrowserRouter>
   )

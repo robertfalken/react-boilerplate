@@ -1,40 +1,21 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import dummyDomain from 'demoDomain/index'
 import Title from './Title'
 
-function DemoDomain({ title, handleAsync }) {
+function DemoDomain() {
   return (
     <div>
-      <Title>{title}</Title>
+      <Title>Demo domain</Title>
       <p>
-        <Link to="more">Test the router</Link>
+        This a boilerplate project to set up the essentials for a new React project.
       </p>
       <p>
-        <button onClick={handleAsync}>Async!</button>
+        Remove this demoDomain folder and add your own business logic and components.
+        But first, make sure to <Link to="redux">test redux/sagas</Link>.
       </p>
     </div>
   )
 }
 
-DemoDomain.propTypes = {
-  handleAsync: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
-}
 
-function mapStateToProps(state) {
-  return {
-    title: dummyDomain.selectors.getTitle(state),
-  }
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    handleAsync: () => dispatch({ type: 'ASYNC_REQUEST', payload: { foo: 'bar' } }),
-  }
-}
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(DemoDomain)
+export default DemoDomain
