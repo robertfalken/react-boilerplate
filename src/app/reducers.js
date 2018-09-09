@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux'
-import demoDomain from 'demoDomain/reducers'
+
+const home = (state = {
+  header: 'Home Scene',
+  content: 'Remove me, or add your own content!',
+}) => state
 
 export default combineReducers({
-  demoDomain,
+  home,
 })
