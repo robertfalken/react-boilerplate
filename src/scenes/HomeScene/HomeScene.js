@@ -3,20 +3,25 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Header } from 'uikit'
 
-const HomeScene = ({ header, content }) => (
-  <div>
-    <Header>
-      {header}
-    </Header>
-    <p>
-      {content}
-    </p>
-  </div>
-)
+class HomeScene extends React.Component {
+  static propTypes = {
+    header: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+  }
 
-HomeScene.propTypes = {
-  header: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  render() {
+    const { header, content } = this.props
+    return (
+      <div>
+        <Header>
+          {header}
+        </Header>
+        <p>
+          {content}
+        </p>
+      </div>
+    )
+  }
 }
 
 const mapStateToProps = ({ home: { header, content } }) => ({
