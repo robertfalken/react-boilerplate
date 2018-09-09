@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --hot --config webpack.config.babel.js",
     "lint": "./node_modules/.bin/eslint . --config ./.eslintrc.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -15,6 +15,7 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.2",
     "css-loader": "^0.28.11",
     "directory-named-webpack-plugin": "^4.0.0",
@@ -46,7 +47,7 @@
     "@storybook/addon-links": "^4.0.0-alpha.16",
     "@storybook/addons": "^4.0.0-alpha.16",
     "@storybook/react": "^4.0.0-alpha.16",
-    "babel-runtime": "^6.26.0",
-    "babel-core": "^6.26.3"
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0"
   }
 }

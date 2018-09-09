@@ -1,5 +1,5 @@
-const path = require('path')
-const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
+import path from 'path'
+import DirectoryNamedWebpackPlugin from 'directory-named-webpack-plugin'
 
 module.exports = {
   entry: './src/index',
