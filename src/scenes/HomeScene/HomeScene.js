@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { Header } from 'uikit'
 
 const HomeScene = ({ header, content }) => (
   <div>
-    <h1>{header}</h1>
+    <Header>
+      {header}
+    </Header>
     <p>
       {content}
     </p>
