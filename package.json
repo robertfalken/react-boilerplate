@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --hot",
     "lint": "./node_modules/.bin/eslint . --config ./.eslintrc.js"
   },
   "dependencies": {
@@ -32,7 +32,6 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-saga": "^0.16.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "styled-components": "^3.2.3",

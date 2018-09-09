@@ -20,7 +20,6 @@
 
 - Hod Module Reloading
 - Redux
-- Redux Sagas
 - React Router
 
 ### Misc
