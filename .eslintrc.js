@@ -1,4 +1,5 @@
 const path = require('path')
+const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
 
 module.exports = {
   parser: 'babel-eslint',
@@ -8,9 +9,18 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
-      node: {
-        paths: ['src']
-      }
+      webpack: {
+        config: {
+          resolve: {
+            modules: [
+              path.resolve(__dirname, 'src'),
+            ],
+            plugins: [
+              new DirectoryNamedWebpackPlugin(true),
+            ],
+          },
+        },
+      },
     },
   },
   rules: {
